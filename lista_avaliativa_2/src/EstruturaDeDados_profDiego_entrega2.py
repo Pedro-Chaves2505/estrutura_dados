@@ -289,13 +289,11 @@ if __name__ == '__main__':
 
                 match metodo:
                     case 'a':
-                        bubble_sort_listdic(produtos, campo, crescente)
+                        ids_ordenados = bubble_sort_listdic(produtos, campo, crescente)
                     case 'b':
-                        insertion_sort_listdic(produtos, campo, crescente)
+                        ids_ordenados = insertion_sort_listdic(produtos, campo, crescente)
                     case 'c':
-                        selection_sort_listdic(produtos, campo, crescente)
-
-                ids_ordenados = bubble_sort_listdic(produtos, "nome", 0)
+                        ids_ordenados = selection_sort_listdic(produtos, campo, crescente)
 
                 for i in range(qtd_produtos):
                     print(produtos[ids_ordenados[i]])
